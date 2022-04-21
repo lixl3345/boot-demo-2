@@ -28,7 +28,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency> 
+		</dependency>
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>5.8.0.M3</version>
+		</dependency>
 	</dependencies>
 	 <dependencyManagement>
 		<dependencies>
@@ -40,15 +45,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement> 
-	 <!-- Nexus 私服 -->
-	<distributionManagement> 
-        <snapshotRepository>
-            <id>lxl-snapshots</id>
-            <name>lxl-snapshots</name>
-            <url>http://172.20.10.3:8081/repository/lxl-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement> 
+	</dependencyManagement>
 	<build>
 		<plugins>
 			<plugin>
